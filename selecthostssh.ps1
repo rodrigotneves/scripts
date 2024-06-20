@@ -1,8 +1,8 @@
 function Select-SSHHost {
     $hosts = @(
-        @{Option = 1; Name = "VMDev Casa"; Address = "10.144.10.3"; User = "thiago"; Key = "C:\Users\thiago.neves\.ssh\id_rsa-vscode-thiago_devCasa"},
-        @{Option = 2; Name = "VMDev X Mold"; Address = "10.120.40.26"; User = "thiago"; Key = "C:\Users\thiago.neves\.ssh\id_rsa-vscode-thiago_dev"},
-        @{Option = 3; Name = "CT Airflow"; Address = "10.120.40.23"; User = "airflow"; Key = "C:\Users\thiago.neves\.ssh\id_rsa-vscode-airflow"}
+        @{Option = 1; Name = "CHANGE_HOST_NAME"; Address = "CHANGE_IP"; User = "CHANGE_USER"; Key = "PATH_TO_SSH_KEY"},
+        @{Option = 2; Name = "CHANGE_HOST_NAME"; Address = "CHANGE_IP"; User = "CHANGE_USER"; Key = "PATH_TO_SSH_KEY"},
+        @{Option = 3; Name = "CHANGE_HOST_NAME"; Address = "CHANGE_IP"; User = "CHANGE_USER"; Key = "PATH_TO_SSH_KEY"}
     )
 
     $hosts | ForEach-Object { Write-Host "$($_.Option): $($_.Name)" }

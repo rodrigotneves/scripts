@@ -1,4 +1,4 @@
-function Select-SSHHost {
+function ConnectToHost {
     $hosts = @(
         @{Option = 1; Name = "CHANGE_HOST_NAME"; Address = "CHANGE_IP"; User = "CHANGE_USER"; Key = "PATH_TO_SSH_KEY"},
         @{Option = 2; Name = "CHANGE_HOST_NAME"; Address = "CHANGE_IP"; User = "CHANGE_USER"; Key = "PATH_TO_SSH_KEY"},
